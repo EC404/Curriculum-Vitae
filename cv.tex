@@ -1,0 +1,168 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{xeCJK}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape JiaWei Lee} \\ \vspace{3pt}
+    \faMobile \hspace{.5pt} \href{tel:0912911672}{+886 912 911 672} $|$
+    \faAt \hspace{.5pt} \href{mailto:qw960211@gmail.com}{qw960211@gmail.com} $|$
+    \faGithub \hspace{.5pt} \href{https://github.com/EC404}{GitHub} $|$
+    \faMapMarker  \hspace{.5pt} \href{NTPC ,Taiwan}{Taipei, Taiwan}
+\end{center}
+
+{Software engineer with 2 years experience in Turing-Drive, dedicated to researching
+path planning and GNSS positioning, the main programming languages is C++, C, Python} \\
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\textbf{National Yunlin University of Science and Technology}}{Yunlin, Taiwan}
+      {Department of Electrical Engineering}{Sep. 2017 -- Jun 2019}
+      \resumeItemListStart
+        \resumeItem{Mobile robot, Robot Operating system(ros)}
+      \resumeItemListEnd
+    \resumeSubheading
+      {\textbf{LatexNational Formosa University}}{Yunlin, Taiwan}
+      {Department of Electrical Engineering}{Sep. 2015 -- Jun 2017}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{\textbf{Professional Experience}}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading 
+      {Turing Drive Inc. \scriptsize{(C++, C, Python, ROS, Shell, Linux, Path Planning, GNSS)}}{Taipei, Taiwan}
+      {Software Engineer}{Nov 2019 -- Present}
+      \resumeItemListStart
+        \resumeItem{Optimized the path planning algorithm and the integrated obstacle information in the Autoware system, execution speed is more than 50 percentage faster, total mileage exceeds 5,000 km, and over 4,000 people have been onboard}
+        \resumeItem{Designed and implemented NMEA parser and NTRIP Caster available to the projects positioning system}
+        \resumeItem{Designed and implemented data log to path planning system, used for algorithm debug}
+        \resumeItem{Developed a through 2D LiDAR detection person leg and 3D LiDAR camera fusion}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{项目实践}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
+            \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+            \resumeItem{Visualized GitHub data to show collaboration}
+            \resumeItem{Used Celery and Redis for asynchronous tasks}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+          \resumeItemListStart
+            \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+            \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+            \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+            \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{\textbf{Skills}}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, Python, Shell scrip} \\
+     \textbf{Frameworks}{: ROS, ROS2} \\
+     \textbf{Developer Tools}{: Git, Docker, VS Code, Vim, Cmake, } \\
+     \textbf{Libraries}{: Eigen, PCL, Opencv, Pandas, NumPy, Matplotlib}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
