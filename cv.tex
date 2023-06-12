@@ -93,8 +93,7 @@
     \faGithub \hspace{.5pt} \href{https://github.com/EC404}{\color{blue}GitHub}
 \end{center}
 
-{Software developer with 3 years of experience in a Turing-Drive, dedicated to researching
-path planning and GNSS positioning, the main programming languages is C++, C, Python} \\
+{I am Joe Lee, a software developer with 3 years of experience at Turing-Drive, dedicated to researching and implemented path planning, system integration and GNSS positioning, Coding skills on C++, C, Python, The developed algorithm operates on buses and golf carts. If you are interested in me, feel free to contact me.} \\
 
 %-----------PROGRAMMING SKILLS-----------
 \section{\textbf{Skills}}
@@ -104,7 +103,8 @@ path planning and GNSS positioning, the main programming languages is C++, C, Py
      \textbf{Frameworks}{: ROS, ROS2} \\
      \textbf{OS}{: Linux, Window} \\
      \textbf{Developer Tools}{: Git, Docker, VS Code, Vim, Cmake, } \\
-     \textbf{Libraries}{: Eigen, Opencv, Pandas, NumPy, Matplotlib}
+     \textbf{Libraries}{: Eigen, Opencv, Pandas, NumPy, Matplotlib} \\
+     \textbf{Hardware}{: NVIDIA Jetson, Raspberry Pi, Arduino}
     }}
  \end{itemize}
 
@@ -113,10 +113,10 @@ path planning and GNSS positioning, the main programming languages is C++, C, Py
   \vspace{3pt}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {National Yunlin University of Science and Technology}{Yunlin, Taiwan}
+      {National Yunlin University of  Science and Technology}{Yunlin, Taiwan}
       {Department of Electrical Engineering}{Sep. 2017 -- Jun 2019}
       \resumeItemListStart
-        \resumeItem{Mobile robot, Robot Operating System(ROS)}
+        \resumeItem{LiDAR Pedestrian Detection and Trajectory Tracking Based on Morphological Extended-Jump-Distance  Clustering Segmentation and Its Intelligent Patrolling  Security Robot Application}
       \resumeItemListEnd
     \resumeSubheading
       {National Formosa University}{Yunlin, Taiwan}
@@ -133,11 +133,15 @@ path planning and GNSS positioning, the main programming languages is C++, C, Py
       {\href{https://turing-drive.com/zh/home-zh/}{\color{blue}Turing Drive Inc}\emph{\scriptsize{(C++/C, Python, ROS, Shell, Linux, Path Planning, GNSS)}}}{Taipei, Taiwan}
       {Software Engineer}{Nov 2019 -- Present}
       \resumeItemListStart
-      \resumeItem{Upgrade the self-driving system to autoware.universe(ros2), understand the architecture and transplant the previously developed feature to autoware.universe}
-      \resumeItem{Optimized the path planning algorithm and the integrated obstacle information in the Autoware system, execution speed is more than 60\% faster, total mileage exceeds 5,000 km, and over 4,000 people have been onboard}
-      \resumeItem{Designed and implemented NMEA parser and NTRIP Caster available to the projects positioning system}
-      \resumeItem{Designed and implemented data log to the path planning system used for algorithm debugging and improved on-site work efficiency by about 50\%}
-      \resumeItem{Developed a through 2D LiDAR detection person leg and 3D LiDAR camera fusion}
+      \resumeItem{Understood motion planning algorithms and tuned parameters, including trajectory smoothing, generation of kinematically-feasible and collision-free trajectories, and obstacle cruising and avoidance}
+      \resumeItem{Collaborated with algorithm engineers to design and implement motion velocity optimization algorithm using objective function and constraints generated through speed profile generation}
+      \resumeItem{Upgraded the autonomous driving system to ROS2 and refactored the system-level integration architecture and the path planner module. Currently, it is running on various testing platforms}
+      \resumeItem{Refactored and optimized the path planning module, resulting in a 60\% increase in execution speed; Integrated camera obstacle detection to enable dynamic obstacle avoidance and side turn warnings. Automatic turn signals are implemented based on curvature calculation, and turning speeds are adjusted,  This module is used for buses operating on open roads with mixed traffic flow.}
+      \resumeItem{Refactored the state machine code in the path planning and integrated vector map with camera obstacle detection to add bus stop recognition, traffic signal recognition, and AEB (Automatic Emergency Braking). This module is used for buses operating on the semi-open dedicated bus lane on Taipei's Xinyi Road during nighttime}
+      \resumeItem{Designed and implemented a GNSS parser that can flexibly adjust the parsed content based on different vehicle requirements, it's applied in various vehicle modules}
+      \resumeItem{Designed and implemented a path planning module with a logger system, which automatically records the required data during the autonomous driving process using the switch of the autonomous driving system, This reduces on-site debugging and parameter tuning time by 50\%}
+      \resumeItem{Implemented leg detection and integrated it into the autonomous driving system for golf carts}
+      % \resumeItem{Implemented the fusion of camera and 3D LiDAR sensors to provide actual depth information that is not detected by the camera}
     \resumeItemListEnd
   \resumeSubHeadingListEnd
   
@@ -147,18 +151,11 @@ path planning and GNSS positioning, the main programming languages is C++, C, Py
     \resumeSubHeadingListStart
 
       \resumeProjectHeading
-        {Quantitative trading\emph{\scriptsize{(Python)}}}{May 2022- Present}
-        \resumeItemListStart
-          \resumeItem{Developing the trading strategy}
-          \resumeItem{Get current Cryptocurrency price using the Biance API}
-        \resumeItemListEnd
-
-      \resumeProjectHeading
         {\href{https://drive.google.com/file/d/1FCTHbe_6uXDAoiZOx13j0Z9KNvcpPl73/view?usp=sharing}{\color{blue}Smart trash can}\emph{\scriptsize{(C++/C, ROS, Navigation Stack, SLAM, Opencv, PCL)}}}{Sep 2017 -- May 2019}
           \resumeItemListStart
-            \resumeItem{Designed and Integrated SLAM module, navigation module and sensor module through the ROS, robot served aperiod of time at the NYUST EC404 laboratory}
-            \resumeItem{Developed 2D LiDAR leg detection to using the Adaboost, the detection accuracy on the empty environment is more than 90\%}
-            \resumeItem{Researched and Developed 2D LiDAR SLAM algorithm and Navigation Stack}
+            \resumeItem{Implemented SLAM module, leg detection module and navigation module, integrating sensors and the robot chassis to achieve an autonomous patrol security robot. It won a Silver Medal at the Korean Invention Awards and also achieved good results in domestic software competitions}
+            \resumeItem{Researched point cloud clustering and geometric features of point clouds, Used Adaboost to implement leg detection and achieved pedestrian tracking through Kalman filtering. The detection performance is excellent in open spaces.}
+            \resumeItem{Researched and Developed 2D LiDAR SLAM algorithm and Navigation Stack in ROS}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
