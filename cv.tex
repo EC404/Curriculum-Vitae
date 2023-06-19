@@ -93,7 +93,7 @@
     \faGithub \hspace{.5pt} \href{https://github.com/EC404}{\color{blue}GitHub}
 \end{center}
 
-{I am Joe Lee, a software developer with 3 years of experience at Turing-Drive, dedicated to researching and implemented path planning, system integration and GNSS positioning, Coding skills on C++, C, Python, The developed algorithm operates on buses and golf carts.} \\
+{I am Joe Lee, a software developer with 3 years of experience at Turing-Drive, dedicated to research and implement path planning, system integration, and GNSS positioning. My coding skills include C++, C, and Python. I have implemented the algorithms on buses and golf carts.} \\
 
 %-----------PROGRAMMING SKILLS-----------
 \section{\textbf{Skills}}
@@ -133,14 +133,17 @@
       {\href{https://turing-drive.com/zh/home-zh/}{\color{blue}Turing Drive Inc}\emph{\scriptsize{(C++/C, Python, ROS, Shell, Linux, Path Planning, GNSS)}}}{Taipei, Taiwan}
       {Software Engineer}{Nov 2019 -- Present}
       \resumeItemListStart
-      \resumeItem{Understood motion planning algorithms and tuned parameters, including trajectory smoothing, generation of kinematically-feasible and collision-free trajectories, and obstacle cruising and avoidance}
-      \resumeItem{Collaborated with algorithm engineers to design and implement motion velocity optimization algorithm using objective function and constraints generated through speed profile generation}
-      \resumeItem{Upgraded the autonomous driving system to ROS2 and refactored the system-level integration architecture and the path planner module. Currently, it is running on various testing platforms}
-      \resumeItem{Refactored and optimized the path planning module, resulting in a 60\% increase in execution speed; Integrated camera obstacle detection to enable dynamic obstacle avoidance and side turn warnings. Automatic turn signals are implemented based on curvature calculation, and turning speeds are adjusted,  This module is used for buses operating on open roads with mixed traffic flow.}
-      \resumeItem{Refactored the state machine code in the path planning and integrated vector map with camera obstacle detection to add bus stop recognition, traffic signal recognition, and AEB (Automatic Emergency Braking). This module is used for buses operating on the semi-open dedicated bus lane on Taipei's Xinyi Road during nighttime}
-      \resumeItem{Designed and implemented a GNSS parser that can flexibly adjust the parsed content based on different vehicle requirements, it's applied in various vehicle modules}
-      \resumeItem{Designed and implemented a path planning module with a logger system, which automatically records the required data during the autonomous driving process using the switch of the autonomous driving system, This reduces on-site debugging and parameter tuning time by 50\%}
-      \resumeItem{Implemented leg detection and integrated it into the autonomous driving system for golf carts}
+      \resumeItem{\underline{\textbf{Motion Planning Algorithms:}} Understood motion planning algorithms and tuned parameters and including trajectory smoothing, generating kinematically-feasible and collision-free trajectories, vehicle cruising and obstacle avoidance}
+      \resumeItem{\underline{\textbf{Motion Velocity Optimization Algorithms:}} Participated in designing and implementing a motion velocity optimization algorithm with objective function and constraints to generate velocity profile}
+      \resumeItem{\underline{\textbf{Upgrade and System Integration:}} Upgraded the autonomous driving system to ROS2 and integrated different information from various modules into system management, including state machine, error monitor and system interface. Understood the workflow of the autonomous driving system}
+      \resumeItem{\underline{\textbf{Open Planner Module:}} A 6-meter autonomous driving bus is put to service in  residential area and bus lane, on open road with mixed traffic flow. Traffic light status is calibrated and perception module and integrated to the system, total mileage exceeds 5,000 km, and over 4,000 people have been onboard}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented a logger system for the open planner, which records trajectory and control information and creates visualizations. This reduced on-site debugging and parameter tuning time by 50\%}
+        \resumeItem{Understood open local planner and including trajectory generator, evluator, predictor and parameters, Since the functions used by generator and evaluation are too repetitive, they have been refactored and optimized. This resulted in a 60\% increase in execution speed}
+        \resumeItem{Participated in designing and implementing of the Automatic Emergency Braking(AEB) and Adaptive Cruise Control(ACC) functions, which generate safe braking distances based on time-to-collision(TTC)}
+      \resumeItemListEnd
+      \resumeItem{\underline{\textbf{GNSS:}} Setted up RTK infrastructure and designed and implemented GNSS communication parser, currently operating in various experimental sites}
+      % \resumeItem{Implemented leg detection and integrated it into the autonomous driving system for golf carts}
       % \resumeItem{Implemented the fusion of camera and 3D LiDAR sensors to provide actual depth information that is not detected by the camera}
     \resumeItemListEnd
   \resumeSubHeadingListEnd
@@ -153,9 +156,9 @@
       \resumeProjectHeading
         {\href{https://drive.google.com/file/d/1FCTHbe_6uXDAoiZOx13j0Z9KNvcpPl73/view?usp=sharing}{\color{blue}Smart trash can}\emph{\scriptsize{(C++/C, ROS, Navigation Stack, SLAM, Opencv, PCL)}}}{Sep 2017 -- May 2019}
           \resumeItemListStart
-            \resumeItem{Implemented SLAM module, leg detection module and navigation module, integrating sensors and the robot chassis to achieve an autonomous patrol security robot. It won a Silver Medal at the Korean Invention Awards and also achieved good results in domestic software competitions}
-            \resumeItem{Researched point cloud clustering and geometric features of point clouds, Used Adaboost to implement leg detection and achieved pedestrian tracking through Kalman filtering. The detection performance is excellent in open spaces.}
-            \resumeItem{Researched and Developed 2D LiDAR SLAM algorithm and Navigation Stack in ROS}
+            \resumeItem{\underline{\textbf{Award:}} Applied to autonomous patrol security robots. It won a Silver Medal at the Korean Invention Awards and also achieved good results in domestic software competitions}
+            \resumeItem{\underline{\textbf{System Integration:}} Integrated the SLAM module, Navigation Stack module, and leg tracking module into the robot system using ROS.}
+            \resumeItem{\underline{\textbf{Leg Tracking:}} Researched and implemented point cloud clustering and geometric features of point clouds, Used Adaboost to implement leg detection and achieved pedestrian tracking through Kalman filtering. The detection performance is excellent in open spaces.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
